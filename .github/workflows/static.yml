@@ -15,6 +15,7 @@ jobs:
 
     - name: Install lftp
       run: sudo apt-get install -y lftp
+      
 
     - name: Deploy to Hostinger via FTP
       env:
