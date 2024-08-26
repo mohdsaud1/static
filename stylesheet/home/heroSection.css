@@ -1,0 +1,678 @@
+.backgroundColor {
+    background-color: #fdfaf5 !important;
+}
+
+.heroContainer {
+    position: relative;
+    height: 819px;
+    width: 100vw;
+}
+
+.heroSubContainer {
+    position: absolute;
+    background-color: transparent;
+    background-image: url('../../assets/home/image/png/circlePattern.png');
+    height: 100%;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Hero Image */
+#heroImageContainer {
+    overflow: hidden;
+    width: 590px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 140%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+    transition: top 1.5s ease-in-out, opacity 2s ease-in-out;
+}
+
+.heroImage {
+    width: 100%;
+    height: 100%;
+}
+
+.mentalScoreBtnContainer {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mentalScoreBtn {
+    width: 340px;
+    height: 59px;
+    border-radius: 60px;
+    padding: 12px 32px;
+    text-align: left;
+    vertical-align: baseline;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    border: solid 2px white;
+    font-size: 20px;
+    font-weight: 600;
+    transform: scale(0);
+    transition: transform .5s ease-in-out;
+}
+
+#mentalScoreBtn>img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Rising Your Mind */
+#risingYourMind {
+    position: absolute;
+    left: -18.9%;
+    top: 213px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: left 1.5s ease-in-out, opacity 2s ease-in-out;
+}
+
+.risingYourMindCard {
+    width: 217px;
+    height: 160px;
+    background-color: #FFD8B3;
+    color: #C65F00;
+    padding: 30px 27px 29px 29px;
+    border-radius: 20px;
+}
+
+.risingYourMindCard>.text {
+    margin-bottom: 13px;
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: 600;
+}
+
+#stat {
+    margin-bottom: 5px;
+    text-align: end;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.indicator {
+    position: relative;
+    margin: 0;
+    height: 6px;
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+}
+
+#progressbar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 6px;
+    background-color: #C65F00;
+    border-radius: 4px;
+}
+
+
+/* Depression */
+#depresssionCardContainer {
+    position: absolute;
+    left: 37.5%;
+    top: -150px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: top .7s ease-in-out, opacity 2s ease-in-out;
+}
+
+.depresssionCard {
+    width: 217px;
+    height: 51px;
+    background-color: #79BFFF;
+}
+
+.depresssionCardIcon {
+    color: #045FA0;
+}
+
+/* Boosting Energy by 100%  */
+#boostingEnergyCardContainer {
+    position: absolute;
+    left: 62.4%;
+    top: 91px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    scale: 0;
+    transition: scale .8s ease-in-out, opacity 1.5s ease-in-out;
+}
+
+.boostingEnergyCard {
+    width: 267px;
+    height: 144px;
+    border-radius: 20px;
+    background-color: #FFF2C4;
+    padding: 30px 38px 22px 35px;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+.boostingEnergyCard>.text {
+    text-align: start;
+    margin-bottom: 14px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.energyBarContainer {
+    width: 100%;
+    height: 25px;
+    border: solid 1px #FFE090;
+    border-radius: 6px;
+}
+
+#energyBar {
+    width: 0;
+    height: 25px;
+    background-color: #fdd570;
+    border-radius: 6px;
+    transition: width .8s ease-in-out;
+}
+
+
+/*  self-esteem */
+#selfEsteemCardContainer {
+    position: absolute;
+    right: -270px;
+    top: 238px;
+    transform: translate(50%, -50%);
+    opacity: 1;
+    transition: right .7s ease-in-out, opacity 2s ease-in-out;
+}
+
+.selfEsteemCard {
+    width: 212px;
+    height: 51px;
+    background-color: #AEAAE5;
+}
+
+.selfEsteemCardIcon {
+    color: #625DB2;
+}
+
+
+/* Anxity */
+#anxityCardContainer {
+    position: absolute;
+    left: -24.6%;
+    top: 409px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: left 1.2s ease-in-out, opacity 2s ease-in-out;
+}
+
+.anxityCard {
+    width: 167px;
+    height: 51px;
+    background-color: #FFA9C3;
+}
+
+.anxityCardIcon {
+    color: #FF4A80;
+}
+
+
+/*  Companion */
+#companionCardContainer {
+    position: absolute;
+    right: -23.3%;
+    top: 409px;
+    transform: translate(50%, -50%);
+    opacity: 0;
+    transition: right 1s ease-in-out, opacity 2s ease-in-out;
+}
+
+.companionCard {
+    width: 212px;
+    height: 51px;
+    background-color: #FFB59C;
+}
+
+.companionCardIcon {
+    color: #FF865E;
+}
+
+/* Hyper-active disorder */
+#hyperActiveCardContainer {
+    position: absolute;
+    left: 17.7%;
+    bottom: -157px;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: bottom 1.2s ease-in-out, opacity 2s ease-in-out;
+}
+
+.hyperActiveCard {
+    width: 304px;
+    height: 51px;
+    background-color: #00E45B;
+}
+
+.hyperActiveCardIcon {
+    color: #087B36;
+}
+
+
+/*  Anger Issue */
+#angerIssueCardContainer {
+    position: absolute;
+    right: 18.12%;
+    bottom: -192px;
+    transform: translate(50%, 50%);
+    opacity: 0;
+    transition: bottom 1s ease-in-out, opacity 2s ease-in-out;
+}
+
+.angerIssueCard {
+    width: 212px;
+    height: 51px;
+    background-color: #FF6868;
+}
+
+.angerIssueCardIcon {
+    color: #D50000;
+}
+
+/* Comman Code for depresssionCard, selfEsteemCard, anxityCard, companionCard, hyperActiveCard, angerIssueCard */
+.depresssionCard,
+.selfEsteemCard,
+.anxityCard,
+.companionCard,
+.hyperActiveCard,
+.angerIssueCard {
+    border-radius: 60px;
+    padding: 12px 32px;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+.depresssionCard>.text,
+.selfEsteemCard>.text,
+.anxityCard>.text,
+.companionCard>.text,
+.hyperActiveCard>.text,
+.angerIssueCard>.text {
+    margin: 0;
+    margin-top: -2px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    vertical-align: baseline;
+}
+
+.depresssionCardIcon,
+.selfEsteemCardIcon,
+.anxityCardIcon,
+.companionCardIcon,
+.hyperActiveCardIcon,
+.angerIssueCardIcon {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .heroContainer {
+        height: 327px;
+    }
+
+    /* Hero Image */
+    #heroImageContainer {
+        width: 223px;
+        height: 100%;
+    }
+
+    .mentalScoreBtnContainer {
+        top: 79%;
+    }
+
+    #mentalScoreBtn {
+        width: 198px;
+        height: 32px;
+        border-radius: 30px;
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+
+    #mentalScoreBtn>img {
+        width: 12px;
+        height: 12px;
+    }
+
+    /* Rising Your Mind */
+    #risingYourMind {
+        top: 170px;
+    }
+
+    .risingYourMindCard {
+        width: 101px;
+        height: 74px;
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    .risingYourMindCard>.text {
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+
+    #stat {
+        margin-bottom: 3px;
+        font-size: 9px;
+    }
+
+    .indicator {
+        height: 4px;
+        border-radius: 2px;
+    }
+
+    #progressbar {
+        height: 4px;
+        border-radius: 2px;
+    }
+
+    /* Depression */
+    #depresssionCardContainer {
+        left: 25%;
+        top: -100px;
+    }
+
+    .depresssionCard {
+        width: 100px;
+    }
+
+    /* Boosting Energy by 100%  */
+    #boostingEnergyCardContainer {
+        left: 73%;
+        top: 65px;
+    }
+
+    .boostingEnergyCard {
+        width: 120px;
+        height: 65px;
+        border-radius: 10px;
+        padding: 12px;
+    }
+
+    .boostingEnergyCard>.text {
+        margin-bottom: 5px;
+        font-size: 9px;
+    }
+
+    .energyBarContainer {
+        height: 10px;
+        border-radius: 2px;
+    }
+
+    #energyBar {
+        height: 10px;
+        border-radius: 2px;
+    }
+
+    /*  self-esteem */
+    #selfEsteemCardContainer {
+        right: -21.9%;
+        top: 140px;
+    }
+
+    .selfEsteemCard {
+        width: 102px;
+    }
+
+    /* Anxity */
+    #anxityCardContainer {
+        left: -16% ;
+        top: 245px;
+    }
+
+    .anxityCard {
+        width: 75px;
+    }
+
+    /*  Companion */
+    #companionCardContainer {
+        display: none;
+    }
+
+    /* Hyper-active disorder */
+    #hyperActiveCardContainer {
+        left: 26%;
+        bottom: -20px;
+        z-index: 1;
+    }
+
+    .hyperActiveCard {
+        width: 148px;
+    }
+
+    /*  Anger Issue */
+    #angerIssueCardContainer {
+        bottom: -48px;        
+    }
+
+    .angerIssueCard {
+        width: 102px;
+    }
+
+    .depresssionCard,
+    .selfEsteemCard,
+    .anxityCard,
+    .companionCard,
+    .hyperActiveCard,
+    .angerIssueCard {
+        height: 24px;
+        border-radius: 30px;
+        padding: 6px 14px;
+    }
+
+    .depresssionCard>.text,
+    .selfEsteemCard>.text,
+    .anxityCard>.text,
+    .companionCard>.text,
+    .hyperActiveCard>.text,
+    .angerIssueCard>.text {
+        font-size: 10px;
+        margin-top: -1px;
+    }
+
+    .depresssionCardIcon,
+    .selfEsteemCardIcon,
+    .anxityCardIcon,
+    .companionCardIcon,
+    .hyperActiveCardIcon,
+    .angerIssueCardIcon {
+        font-size: 10px;
+    }
+
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+    .heroContainer {
+        height: 435px;
+    }
+
+    /* Hero Image */
+    #heroImageContainer {
+        width: 295px;
+        height: 100%;
+    }
+
+    #mentalScoreBtn {
+        width: 197px;
+        height: 36px;
+        border-radius: 30px;
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+
+    #mentalScoreBtn>img {
+        width: 12px;
+        height: 12px;
+    }
+
+    /* Rising Your Mind */
+    #risingYourMind {
+        top: 114px;
+    }
+
+    .risingYourMindCard {
+        width: 109px;
+        height: 88px;
+        padding: 14px;
+        border-radius: 10px;
+    }
+
+    .risingYourMindCard>.text {
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+
+    #stat {
+        margin-bottom: 3px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .indicator {
+        height: 4px;
+        border-radius: 2px;
+    }
+
+    #progressbar {
+        height: 4px;
+        border-radius: 2px;
+    }
+
+    /* Depression */
+    #depresssionCardContainer {
+        top: -68px;
+    }
+
+    .depresssionCard {
+        width: 124px;
+    }
+
+    /* Boosting Energy by 100%  */
+    #boostingEnergyCardContainer {
+        left: 61%;
+        top: 77px;
+    }
+
+    .boostingEnergyCard {
+        width: 133px;
+        height: 76px;
+        border-radius: 10px;
+        padding: 14px;
+    }
+
+    .boostingEnergyCard>.text {
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+
+    .energyBarContainer {
+        height: 12px;
+        border-radius: 2px;
+    }
+
+    #energyBar {
+        height: 12px;
+        border-radius: 2px;
+    }
+
+    /*  self-esteem */
+    #selfEsteemCardContainer {
+        top: 140px;
+    }
+
+    .selfEsteemCard {
+        width: 124px;
+    }
+
+    /* Anxity */
+    #anxityCardContainer {
+        left: -24.6%;
+        top: 240px;
+    }
+
+    .anxityCard {
+        width: 93px;
+    }
+
+    /*  Companion */
+    #companionCardContainer {
+        top: 245px;
+    }
+
+    .companionCard {
+        width: 120px;
+    }
+
+    /* Hyper-active disorder */
+    #hyperActiveCardContainer {
+        bottom: -95px;
+    }
+
+    .hyperActiveCard {
+        width: 178px;
+    }
+
+    /*  Anger Issue */
+    #angerIssueCardContainer {
+        bottom: -110px;
+    }
+
+    .angerIssueCard {
+        width: 120px;
+    }
+
+    .depresssionCard,
+    .selfEsteemCard,
+    .anxityCard,
+    .companionCard,
+    .hyperActiveCard,
+    .angerIssueCard {
+        height: 30px;
+        border-radius: 30px;
+        padding: 6px 16px;
+    }
+
+    .depresssionCard>.text,
+    .selfEsteemCard>.text,
+    .anxityCard>.text,
+    .companionCard>.text,
+    .hyperActiveCard>.text,
+    .angerIssueCard>.text {
+        font-size: 12px;
+        margin-top: 0px;
+    }
+
+    .depresssionCardIcon,
+    .selfEsteemCardIcon,
+    .anxityCardIcon,
+    .companionCardIcon,
+    .hyperActiveCardIcon,
+    .angerIssueCardIcon {
+        font-size: 12px;
+    }
+
+}

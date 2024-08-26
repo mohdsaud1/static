@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navContainer {    
+    background-color: #fdfaf5 !important;
+    padding: 48px 32px 18px 32px !important;
+}
+
+.menuText {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.chevronDownIcon::before {
+    padding-left: 4px;
+    font-size: 14px;
+    font-weight: 600 !important;
+}
+
+.newServicesStar::before {
+    color: #ffce22;
+    padding-left: 4px;
+    font-size: 18px;
+    font-weight: 600 !important;
+}
+
+.bookinghub {
+    width: 188px;
+    text-align: center;
+    background-color: #101828;
+    margin-top: -10px;
+    border-radius: 60px;
+    margin-left: 16px;
+    padding: 10px 24px;
+}
+
+.bookinghub>a {
+    color: white;
+}
+
+.bookinghub>a:hover {
+    color: white;
+}
+
+.bookingHubCloudIcon::before {
+    vertical-align: bottom;
+    padding-left: 4px;
+    font-size: 18px;
+    font-weight: 600 !important;
+}
+
+@media only screen and (max-width: 576px)  {
+    .navContainer {    
+        padding: 21px 20px 6px 20px !important;
+    }   
+}
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+    .navContainer {    
+        padding: 45px 32px 15.5px 32px !important;
+    }   
+}
