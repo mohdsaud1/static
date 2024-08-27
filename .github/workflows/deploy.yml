@@ -1,0 +1,25 @@
+name: Deploy Static Page to Hostinger
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Copy static files to build directory
+        run: cp -r ./* dist/
+
+      - name: Deploy to Hostinger
+        uses: actions/deploy@v1
+        with:
+          provider: hostinger
+          hostinger_token: ${{ secrets.HOSTINGER_TOKEN }}
+          hostinger_site_id: ${{ secrets.HOSTINGER_SITE_ID }}
+          build_dir: dist
+          publish_dir: public_html
