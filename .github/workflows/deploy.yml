@@ -16,7 +16,7 @@ jobs:
         run: sudo apt-get install rsync
       - name: Deploy to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
-          with:
+        with:
           server: '${{ secrets.HOSTINGER_FTP_SERVER }}'
           username: '${{ secrets.HOSTINGER_USERNAME }}'
           password: '${{ secrets.HOSTINGER_PASSWORD }}' 
