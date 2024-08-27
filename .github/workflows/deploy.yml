@@ -20,7 +20,7 @@ jobs:
           server: '${{ secrets.HOSTINGER_FTP_SERVER }}'
           username: '${{ secrets.HOSTINGER_USERNAME }}'
           password: '${{ secrets.HOSTINGER_PASSWORD }}'
-          local-dir: dist/
+          local-dir: hear_and_heal/
           server-dir: public_html/
           passive: true
           git-ftp-args: '--insecureure'
