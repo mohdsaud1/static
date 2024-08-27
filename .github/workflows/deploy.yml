@@ -24,7 +24,6 @@
 #           build_dir: dist
 #           publish_dir: public_html
 
-
 name: Deploy Static Page to Hostinger
 
 on:
@@ -40,7 +39,10 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Copy static files to build directory
-        run: cp -r ./* dist/
+        run: rsync -av --exclude='dist/' --exclude='.git/' --exclude='.github/' ./ dist/
+
+      - name: Install rsync
+        run: sudo apt-get install rsync
 
       - name: Deploy to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
